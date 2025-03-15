@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy Birthday, Koko Panda Ganteng! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎂🎈 Selamat Ulang Tahun Koko Panda Ganteng! 🎉🎁</h1>
+        <img class="Kue" src="https://img.freepik.com/free-photo/cake-with-glaze-candles-arrangement_23-2149023563.jpg?t=st=1742019284~exp=1742022884~hmac=0b42edb02ff44fb1bc8eb5c4b26398a7e5735e5b9ecb7abad141d2bc99a20424&w=1380" 
+            alt="Kue Ulang Tahun" width="250" >
+        <p>🎊 Hari istimewa telah tiba! Klik tombol di bawah ini untuk melihat kejutan spesial! 🎊</p>
+        <button class="btn" onclick="playMusic(); showSection('ucapan')">🎊 Buka Ucapan</button>
+        <button class="btn" onclick="playMusic(); showSection('galeri')">📸 Lihat Galeri</button>
+        <button class="btn" onclick="playMusic(); showSection('video')">🎥 Tonton Video</button>
+        <button class="btn" onclick="playMusic(); showSection('surprise')">🎁 Kejutan Spesial</button>
+    </div>
+
+    <!-- Halaman Ucapan -->
+    <div id="ucapan" class="section container">
+        <h1>🎊 Ucapan untukmu! 🎊</h1>
+        <p>🎂 Selamat ulang tahun, Koko Panda Ganteng! 🐼🎂</p>
+        <p>🎁 Semoga panjang umur, sehat selalu, sukses, dan bahagia selalu! 🥳🎈</p>
+        <p>✨ Woe koko panda gw lu kate setelah lulus lu ,au mengalir sajo yang penting kerja megang cuan eohto and lu punye cita cita kerja yang lu pengen semoga semua itu bisa tercapai dan hidup lo lancar sukses merdekaa! ✨💖</p>
+        <p>   Bahagia selalu kawan koko panda ku semoga yang kau inginkan yang kau nanti nanti bisa tercapai okay </p>
+        <p>   Koooo jangan lupe ye mbe kanca kanca mu iki nopi,kela,cinta,danu,agus,azza</p>
+        <p>   Aku i sayang weki ko peduli mbek weki podo karo kela agus danu masio nek kumpul kita i g patio cedak yonek sekirane butuh bantuan gari ngomong ae gsah sungkan mbe akui nek enek masalah i nek pengen crito crito o nde aku aku kilo yo bolomu nek emang g srek crito aku yora masalah mek pengenku aku panggah enek nde konco koncoku</p>
+        <p>   Lu baik ko tapi jail seru seneng nulung konco iso ngerti mbek konco adil dewasa wong apik weki wisto urepmu bakal sukses berdo'a sajo aku dan kawan kawan slalu dukung lu</p>
+        <P>   Seneng koo iso kenal weki happy birthday koko pandaa  </P>
+        <img class="Kue1" src="https://img.freepik.com/free-vector/birthday-wallpaper-theme_23-2148450658.jpg?t=st=1742020036~exp=1742023636~hmac=81eec3dbe6049e48ba8f6b4652edc16486bc81f1d8b40063a9b8a3296fbaea55&w=1380" 
+            alt="Balon Ulang Tahun" width="200">
+        <button class="btn" onclick="hideSections()">⬅ Kembali</button>
+    </div>
+
+    <!-- Halaman Galeri -->
+    <div id="galeri" class="section container">
+        <h1>📸 Galeri Kenangan 🎁</h1>
+        <div class="gallery">
+            <img src="/image/WhatsApp Image 2025-03-15 at 12.56.32_1e7a16ab.jpg" alt="img1">
+            <img src="/image/WhatsApp Image 2025-03-15 at 12.56.33_2776af51.jpg" alt="img2">
+            <img src="/image/WhatsApp Image 2025-03-15 at 12.56.34_864130b3.jpg" alt="img3">
+        </div>
+        <button class="btn" onclick="hideSections()">⬅ Kembali</button>
+    </div>
+
+    <!-- Halaman Video -->
+    <div id="video" class="section container">
+        <h1>🎬 Video Kejutan 🎬</h1>
+        <video width="100%" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Maaf, browser kamu tidak mendukung pemutaran video.
+        </video>
+        <img class="Kue1" src="https://img.freepik.com/free-vector/happy-birthday-you-calligraphy_23-2148453221.jpg?t=st=1742021523~exp=1742025123~hmac=789ec29805f5f6d0bd58916c36af32cbeab62cfcc61d662765e6af058b257c1b&w=1380"
+             alt="Selamat Ulang Tahun" width="200">
+        <button class="btn" onclick="hideSections()">⬅ Kembali</button>
+    </div>
+
+    <!-- Kejutan Spesial -->
+    <div id="surprise" class="section container">
+        <h1>🎁 Kejutan Spesial 🎁</h1>
+        <p>🎉 Klik kotak ini untuk membuka hadiah ulang tahunmu! 🎉</p>
+        <img id="giftBox" src="/image/image-removebg-preview (1).png" alt="Hadiah" width="200" onclick="openGift()">
+        <p id="giftMessage" style="display:none; font-size: 20px;">🎊 Kejutan! Kamu mendapatkan kebahagiaan tak terbatas! 🎊</p>
+        <button class="btn" onclick="hideSections()">⬅ Kembali</button>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="/image/videoplayback.m4a" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

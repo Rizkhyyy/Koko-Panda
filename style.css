@@ -1,0 +1,83 @@
+body {
+    background: url('https://img.freepik.com/free-photo/delicious-birthday-cake-with-blue-background_23-2151010693.jpg?t=st=1742018925~exp=1742022525~hmac=84ae3b74b96bc65d944fa1f8648cfbc1b9e8d07a1edf7c8a52d025569579c83b&w=1380') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+.Kue {
+    border-radius: 15px;
+}
+.Kue1 {
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-right: -160px;
+}
+#giftBox {
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-right: -160px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+h1 {
+    font-size: 30px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px #ff6600;
+    animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+    from { text-shadow: 2px 2px 10px #ff6600; }
+    to { text-shadow: 2px 2px 20px #ffcc00; }
+}
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    justify-items: center;
+}
+.btn:hover {
+    background: #ff9900;
+    transform: scale(1.1);
+}
+.section {
+    display: none;
+    margin-top: 20px;
+}
+.gallery img {
+    width: 30%;
+    margin: 5px;
+    border-radius: 10px;
+}
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 50%;
+    animation: fall linear infinite;
+}
+@keyframes fall {
+    0% { transform: translateY(-100vh); }
+    100% { transform: translateY(100vh); }
+}
+audio {
+    display: none;
+}
